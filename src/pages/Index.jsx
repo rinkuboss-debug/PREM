@@ -126,7 +126,7 @@ function Index() {
       <div className="service px-[5%] lg:px-[12%] py-[80px]">
         <div className="text-center mb-10">
           <h4 className="text-4xl md:text-5xl font-bold">Our Services</h4>
-          <p className="text-[#2f2956] font-medium text-lg md:text-xl mt-2">
+          <p className="text-[white] font-medium text-lg md:text-xl mt-2">
             PREM offers you the best real estate assistance
           </p>
         </div>
