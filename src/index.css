@@ -1,0 +1,108 @@
+
+
+@import "tailwindcss";
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
+/* @theme{
+  --prim-color:#6919dd;
+  --white:#fff;
+  --black:#000;
+  --text-color:#2f2956;
+  --pere-color:#696969;
+  --prim-grident:linear-gradient(90deg, #f1EAF8 0%, #f7F4FC 100%);
+} */
+
+.login-image-overlay{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-image: linear-gradient(0deg, #000 , transparent 56%);
+  opacity: 0.35;
+}
+
+.btn::after{
+  content: '';
+  position: absolute;
+  left: auto;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--black);
+  z-index: 0;
+  transition: all .4s ease-in-out;
+}
+
+.btn:hover:after{
+  width: 100%;
+  right: auto;
+  left: 0;
+}
+
+.nav-menu li a{
+  position: relative;
+  padding: 10px;
+}
+
+
+.nav-menu li a:after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: var(--prim-color);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.nav-menu li:hover a:after{
+  opacity: 1;
+  top: 0;
+}
+
+.swiper-wrapper{
+  padding: 30px 0;
+}
+
+.propertie-img-slider .swiper-wrapper ,
+.top-propertie-img-slider .swiper-wrapper {
+  padding: 0 !important;
+}
+
+.top-properties{
+  position: relative;
+}
+
+.top-properties:after{
+  content: '';
+  position: absolute;
+  top: -40%;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background-color: #6600ff1a;
+}
+.share-icons{
+  position: absolute;
+}
+
+
+
+.swiper-pagination-bullets .swiper-pagination-bullet{
+  padding: 5px;
+  background-color: #6600ff;
+  transition: 0.4s;
+}
+
